@@ -1,32 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: white;
+    background: #eee;
     font-family: arial;
     color: #FAFAFA;
-    text-transform: uppercase;
 }
 
-
-
-.navbar-form .form-control{
-width: 220px;
+.oculto{
+  display: none;
+}
+.navbar-default {
+    background-color: white;
+    padding: 1%;
 }
 
-.navbar-default{
-  background-color: white;
-  padding: 1%;
-}
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
     padding-bottom: 0.3%;
 }
 
-.acceder{
-  border: none;
-  background-color: transparent;
-  color: white;
+.navbar-right{
+  margin-right: 30px;
+}
+.navbar-brand>img {
+    padding-left: 10px;
+}
+.acceder {
+    border: none;
+    background-color: transparent;
+    color: white;
 }
 
-iframe{
-  width: 60%;
-  height: 500px;
+iframe {
+    width: 60%;
+    height: 300px;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: left}
+.navbar {
+    padding-top: 5px;
+    background-color: white;
+}
+
+.navbar a {
+    font-weight: bold;
+    font-size: 1.3em;
+    background: white;
+}
+
+.image-logo {
+    width: 120px;
+}
+
+.navbar-form .form-control {
+    width: 310px;
+}
+/*.navbar-form{
+      padding: 0px 90px;
+}*/
+.icono {
+    color: #a0a0a0;
+    padding: 7px;
+}
+
+.btn {
+    background-color: #eee;
+    width: 50px;
+}
+
+.buscar {
+    position: absolute;
+    left: 20%;
+    display: block;
+    width: 580px;
+    text-align: center;
+}
+
+form{
+  margin-left: 20px;
+}
+
+.media-object{
+  margin: 12px;
+}
+
+.visible{
+  display: block;
 }
