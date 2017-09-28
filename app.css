@@ -36,7 +36,7 @@ body {
 }
 
 iframe {
-    width: 60%;
+    width: 90%;
     height: 300px;
 }
 
@@ -86,9 +86,9 @@ form{
   margin-left: 20px;
 }
 
-.media-object{
+/*.media-object{
   margin: 12px;
-}
+}*/
 
 .visible{
   display: block;

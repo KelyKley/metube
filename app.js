@@ -14,24 +14,20 @@ let app = {
             if (e.keyCode == 13) {
                 $("#root").html("");
                 app.youtubeSearch($("#lupa").val());
-                //alert('Has presionado ENTER');
             }
             //$("#lupa").val("");
         });
     },
-    //<iframe className="embed-responsive-item" src={url}> </iframe>
     getVideoList: function(videos) {
         return videos.map((video, index) => {
             const imageUrl = video.snippet.thumbnails.default.url;
             const url = `https://www.youtube.com/embed/${video.id.videoId}`;
-            return   `<div class="">
-                        <div class="">
-                           <img class="media-object" src=${imageUrl} width="100%" />
-                        </div>
-                        <div id="videoG" class="oculto"> 
-                           <iframe id=${imageUrl} class="embed-responsive-item" src=${url}> </iframe>
-                        </div>
-                     </div>`;
+            return `<div class="col-md-8 col-xs-8"> 
+                        <iframe class="embed-responsive-item" src=${url}> </iframe>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img class="media-object" src=${imageUrl} width="100%" />
+                    </div>`;
         });
     },
     youtubeSearch: function(searchTerm) {
